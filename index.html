@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro - Ultra Performance</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/banner.jpg');
+            background-size: cover;
+            background-position: center;            
+            height: 80vh;
+        }
+        
+        .pricing-card {
+            transition: transform 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">TechPro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Recursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Preços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4">O dispositivo mais poderoso do mercado</h1>
+        <p class="lead mb-4">Desempenho revolucionário com tecnologia de última geração</p>
+        <a href="#pricing" class="btn btn-primary btn-lg">Comprar Agora</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6">Recursos Exclusivos</h2>
+            <p class="text-muted">Tudo o que você precisa para maximizar sua produtividade</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-bolt feature-icon mb-3"></i>
+                <h3>Ultra Performance</h3>
+                <p class="text-muted">Processador de última geração com 8 núcleos e 5.0GHz</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-battery-full feature-icon mb-3"></i>
+                <h3>Bateria de Longa Duração</h3>
+                <p class="text-muted">Até 20 horas de uso contínuo com carga rápida</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-camera feature-icon mb-3"></i>
+                <h3>Câmera Profissional</h3>
+                <p class="text-muted">Sistema triplo de câmeras com 108MP</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-6">Planos e Preços</h2>
+            <p class="text-muted">Escolha o plano ideal para suas necessidades</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card pricing-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Basic</h5>
+                        <h2 class="card-title">R$ 2.999</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li>128GB Armazenamento</li>
+                            <li>8GB RAM</li>
+                            <li>Câmera Dupla</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card pricing-card h-100 border-primary">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pro</h5>
+                        <h2 class="card-title text-primary">R$ 3.999</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li>256GB Armazenamento</li>
+                            <li>12GB RAM</li>
+                            <li>Câmera Tripla</li>
+                        </ul>
+                        <button class="btn btn-primary">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card pricing-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ultra</h5>
+                        <h2 class="card-title">R$ 4.999</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li>512GB Armazenamento</li>
+                            <li>16GB RAM</li>
+                            <li>Câmera Tripla + Zoom Óptico</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h4>TechPro</h4>
+                <p class="text-muted">A melhor tecnologia ao seu alcance</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contato</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-phone me-2"></i>(11) 9999-9999</li>
+                    <li><i class="fas fa-envelope me-2"></i>contato@techpro.com</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <p class="text-center text-white mb-0">&copy; 2023 TechPro - Todos os direitos reservados</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
